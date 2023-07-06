@@ -1,0 +1,18 @@
+php artisan serve
+
+Command mengolah database:
+  1) Post::create(['title' => 'My Third Post', 'excerpt' => 'Lorem ipsum dolor sit.', 'body' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia pariatur numquam itaque culpa incidunt facere at repudiandae cumque minus dolores nisi mollitia possimus distinctio quae, nesciunt expedita nemo unde, veniam ea earum asperiores laboriosam! Similique doloremque error esse possimus recusandae?', 'slug' => 'my-third-post', 'category_id' => 1]);
+  2) $post = Post::find(2)
+  3) $post->update(['excerpt' => 'dah ganti'])
+  4) $post->delete()
+  
+  Command lainnya:
+  1) php artisan migrate:fresh 
+  2) php artisan migrate:rollback 
+  3) php artisan tinker
+  4) php artisan make:migration create_posts_table
+  5) php artisan make:model Post  
+
+  
+  1) Post::create(['title' => 'Berbeda Post', 'excerpt' => 'Lorem ipsum dolor sit.', 'body' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia pariatur numquam itaque culpa incidunt facere at repudiandae cumque minus dolores nisi mollitia possimus distinctio quae, nesciunt expedita nemo unde, veniam ea earum asperiores laboriosam! Similique doloremque error esse possimus recusandae?', 'slug' => 'berbeda-post', 'category_id' => 2]);
+  Post::create(['title' => 'Minggu Post', 'excerpt' => 'Lorem ipsum dolor sit.', 'body' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia pariatur numquam itaque culpa incidunt facere at repudiandae cumque minus dolores nisi mollitia possimus distinctio quae, nesciunt expedita nemo unde, veniam ea earum asperiores laboriosam! Similique doloremque error esse possimus recusandae?', 'slug' => 'minggu-post', 'category_id' => 3]);
